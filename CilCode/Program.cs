@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ILTest
 {
@@ -16,6 +18,11 @@ namespace ILTest
             {
                 Console.WriteLine(instruction);
             }
+        }
+        public static async Task Get()
+        {
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("");
+            WebResponse x = await httpWebRequest.GetResponseAsync();
         }
         public static bool Salve()
         {
