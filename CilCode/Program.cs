@@ -20,7 +20,6 @@ namespace ILTest
         public static bool Salve()
         {
             string s = string.Empty;
-            string al = string.Empty;
             for (int i = 0; i < 10; i++)
                 s += i.ToString();
             StringBuilder stringBuilder = new StringBuilder();
